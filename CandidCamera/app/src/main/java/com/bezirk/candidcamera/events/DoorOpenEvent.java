@@ -7,5 +7,7 @@ import com.bezirk.middleware.messages.Event;
  */
 
 public class DoorOpenEvent extends Event {
-
+  public String toString() {
+          return "1";
+    }
 }
