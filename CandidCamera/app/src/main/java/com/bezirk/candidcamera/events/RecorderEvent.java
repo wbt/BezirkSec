@@ -19,7 +19,7 @@ public class RecorderEvent extends Event {
     }
 
     public String toString() {
-        return String.format("Recorder Action: %s for area: %s",
-               action);
+        return String.format("Recorder Action: %s for area: %d",
+               action, area);
     }
 }
