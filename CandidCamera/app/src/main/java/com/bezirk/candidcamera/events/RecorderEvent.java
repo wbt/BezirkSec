@@ -14,7 +14,7 @@ public class RecorderEvent extends Event {
     public String getAction() {
         return action;
     }
-    public String getArea() {
+    public int getArea() {
         return area;
     }
 
