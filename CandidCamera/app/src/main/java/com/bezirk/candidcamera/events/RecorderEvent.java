@@ -2,8 +2,8 @@ package com.bezirk.candidcamera.events;
 import com.bezirk.middleware.messages.Event;
 
 public class RecorderEvent extends Event {
-    private String action;
-    private int area;
+    private String action; //"start" or "cancel" or "finish"
+    private int area; //default 1
 
 
     public RecorderEvent(String action, int area) {
