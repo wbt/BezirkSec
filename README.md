@@ -18,12 +18,13 @@ This technology could also be used to answer the age-old question, "[Who stole t
  - Not Cloud-Dependent: This system does not absolutely rely on the "cloud" or a connection to the broader Internet.  Components communicate with one another over the local wireless network via Bezirk middleware. Connection to the broader Internet is only needed for remote notifications and optional cloud backup of captured video (which most providers re-attempt after an Internet outage without requiring explicit user intervention).  
 
 ###Future improvements:
- - Better UI for configuring parameters and control.
- - Configurable authorization list (with revocation capabilities) listing specific phones that count as "recognized," instead of relying solely on Wi-Fi authentication controls,
+ - Better UI including configurable parameters and control.
+ - Configurable authorization list (with revocation capabilities) listing specific phones that count as "recognized," instead of relying solely on Wi-Fi authentication controls.
  - Improved hardware (e.g. real reed switch instead of button prototype) and conversion of Arduino + serial sensor piece to Wi-Fi-enabled Raspberry Pi to send Bezirk events directly and improve the form factor as well as reduce cost.  The Arduino + serial sensor hardware simulation used here already exceeds hackathon specs allowing software simulation of devices.
  - Camera client for Android that uses the camera on an Android device, and/or other adapters that can process camera events.  Again, writing the adapter allowing us to control real Windows camera devices exceeded hackathon specs.
  - Enhanced notifications including options for SMS, for including a direct link to the video (which may be stored on a cloud platform like Dropbox, Google Drive, etc. accessible to only authenticated users) and/or a still image attached to [MMS](https://en.wikipedia.org/wiki/Multimedia_Messaging_Service) or e-mail.
-
+ - Simplified installation
+ 
 ------------------------
 PLEASE NOTE:  This is a HACKATHON PROTOTYPE.  It is NOT yet well tested and has NO WARRANTY WHATSOEVER and you should NOT rely on it as-is.  If you try it, it’s at your own risk.
 Copyright is retained by the authors.  
