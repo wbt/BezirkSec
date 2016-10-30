@@ -17,11 +17,11 @@ This technology could also be used to answer the age-old question, "[Who stole t
  - Home-scalable: In a more configurable future edition, you can have multiple cameras and associate each with one or more specific door sensors.  You can also have multiple cameras, and even different types of cameras running on different platforms, triggered on any specific door sensor, and add or remove (subscribe/unsubscribe) them without having to change anything on the controllers. 
 
 ###Future improvements:
- - Better UI for configuring parameters and control
- - Create a configurable authorization list (with revocation capabilities) of specific phones that count as "recognized" instead of relying solely on Wi-Fi authentication controls
+ - Better UI for configuring parameters and control.
+ - Configurable authorization list (with revocation capabilities) listing specific phones that count as "recognized," instead of relying solely on Wi-Fi authentication controls,
  - Improved hardware (e.g. real reed switch instead of button prototype) and conversion of Arduino + serial sensor piece to wifi-enabled Raspberry Pi to send Bezirk events directly and improve the form factor as well as reduce cost.  The Arduino + serial sensor hardware simulation used here already exceeds hackathon specs allowing software simulation of devices.
- - Write a camera client for Android that uses the camera on an Android device, and/or other adapters that can process camera events.  Again, writing the adapter allowing us to control real Windows camera devices exceeded hackathon specs.
- - Enhance notifications to add options for SMS, and include a direct link to the video (which may be stored on a cloud platform like Dropbox, Google Drive, etc. accessible to only authenticated users) and/or a still image ([MMS](https://en.wikipedia.org/wiki/Multimedia_Messaging_Service) or e-mail).
+ - Camera client for Android that uses the camera on an Android device, and/or other adapters that can process camera events.  Again, writing the adapter allowing us to control real Windows camera devices exceeded hackathon specs.
+ - Enhanced notifications including options for SMS, for including a direct link to the video (which may be stored on a cloud platform like Dropbox, Google Drive, etc. accessible to only authenticated users) and/or a still image attached to [MMS](https://en.wikipedia.org/wiki/Multimedia_Messaging_Service) or e-mail.
 
 ------------------------
 PLEASE NOTE:  This is a HACKATHON PROTOTYPE.  It is NOT yet well tested and has NO WARRANTY WHATSOEVER and you should NOT rely on it as-is.  If you try it, it’s at your own risk.
