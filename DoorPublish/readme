@@ -2,5 +2,5 @@
 
 1. Follow Circuit schematic to construct circuit
 2. Open SerialReadDigital.ino in Arduino IDE and select Tools->Board: “Arduino/Genuino Uno” and also select Tools->Port: “/dev/cu.usbmodem 1411 (Arduino/Genuino Uno)"
-3. Upload code to Arduino 
+3. Upload code to Arduino (be sure to have the correct selection in Tools-> Port)
 4. Open up Android Studio and run SerialTest.java
