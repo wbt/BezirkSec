@@ -32,8 +32,8 @@ Copyright is retained by the authors.
 The system has four main software components:
  1.  Door sensor: Detects and broadcasts when door opens or closes.
  2.  Smartphone: If in range and receiving event notification that “door opens,” broadcasts message indicating whether or not it was recently in the vicinity of the doorway.  
- 3.  Controller: Listens for door events and starts recording; cancels recording if authorized phone sends notice it was in the vicinity of the door; stops recording a certain amount of time after the door is closed (subject to a maximum recording length in case no “door closed” signal is received within a few minutes after the “door open” event); notifies owner
- 4.  Camera(s): Listens to recording instructions from controller
+ 3.  Controller: Listens for door events and starts recording; cancels recording if authorized phone sends notice it was in the vicinity of the door; stops recording a certain amount of time after the door is closed (subject to a maximum recording length in case no “door closed” signal is received within a few minutes after the “door open” event); notifies owner.
+ 4.  Camera(s): Listens to recording instructions from controller.
 
 
 In a single-camera setup, it is suggested to run the controller on the same device as the camera.  In a multi-camera setup, the controller can be run on any camera.  It can also be run on the processor attached to the door sensor, if that processor has sufficient computing resources.  The controller should NOT be run on a mobile device that might be missing from the network at the time of a possible intrusion.  The software separation between controller and camera(s) permits use of multiple cameras, that may each have a different angle on the scene.  It is possible to eliminate the Bezirk interface between the controller and camera and have a separate controller for each camera, but this may lead to inconsistencies and extra notifications.
