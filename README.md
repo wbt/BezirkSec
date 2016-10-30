@@ -8,7 +8,7 @@ This technology could also be used to answer the age-old question, "[Who stole t
 ##Advantages:
  - This Internet of Things system is significantly lower cost than other comparables.  You only need:  
    - An inexpensive wifi-enabled Arduino/Raspberry Pi, simple reed switch (possibly also a resistor), and magnet.
-   - A low-power Bluetooth beacon ([Estimote](http://estimote.com/#get-beacons-section) used in this prototype; can also change the code for another proximity sensor such as RFID).
+   - A low-power Bluetooth beacon ([Estimote](http://estimote.com/#get-beacons-section) is used in this prototype; can also change the code for another proximity sensor such as RFID).
    - An Android smartphone (cost estimates assume you already have this).
    - A camera device.  With current code, this could be a Windows computer with a webcam attached; a wide range of cameras and IP cameras are supported.  In a future edition, you can replace this with an old Android device like those you can buy inexpensively on eBay, that doesn’t even need a carrier plan.  
    - Mounting hardware such as tape, screws, or adhesive tack to hold up the door sensor, camera, and/or wires (if your devices need any), as well as wire-covering paper in a color that matches the walls for more asthetically pleasing installations.   
