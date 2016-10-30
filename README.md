@@ -3,7 +3,7 @@ As part of the [Bezirk](http://bezirk.com/) Hackathon Fall 2016, we created Cand
 
 ## What is it?
 Candid Camera monitors a door to catch unsoliciated strangers by sending you a video whenever an stranger opens it.  
-This technology could also be used to answer the age-old question, "[Who stole the cookies from the cookie jar?](https://en.wikipedia.org/wiki/Who_Stole_the_Cookie_from_the_Cookie_Jar%3F)"
+This technology could also be used to answer the age-old question, "[Who stole the cookies from the cookie jar?](https://en.wikipedia.org/wiki/Who_Stole_the_Cookie_from_the_Cookie_Jar%3F)" or help monitor a filing cabinet containing particularly sensitive information, though a knowledgeable thief might be able to first cover or otherwise disable the camera, leaving only timing and possible intent information. 
 
 ##Advantages:
  - This Internet of Things system is significantly lower cost than other comparables.  You only need:  
