@@ -55,3 +55,18 @@ First, follow [these instructions](http://developer.bezirk.com/documentation/ins
  1. The smartphone software and installation instructions can be found [here](https://github.com/boyP/EstimoteAdapterBezirk); follow those.
  2. Install the Bluetooth beacon on or near the "inside" of the door.  You may want to use a temporary mounting at first to experiment with the exact placement later. 
 
+### Controller:
+ Detailed instructions coming soon.
+
+### Cameras:
+ 1. First, install [iSpy for Windows](http://www.ispyconnect.com/) on a Windows machine that will remain running while you wish the system to be active.  
+ 2. In the iSpy interface, “Add” devices. You can add webcams that are plugged in locally, or IP cams and other video or microphone sources.   After you add a device, in the Edit Camera or Edit Microphone dialog, take note of the number following “ID” in the title bar.  In this dialogue, you can control advanced properties like adjusting camera color balance, exposure, rotation/mirroring, data directory, microphone association, etc.
+ 3. In the iSpy Edit box, especially if you are a paying subscriber, the Alerts tab allows you to optionally add actions like SMS or e-mail notification through iSpyConnect (instead of this system's controller) when e.g. recording starts or stops.  
+ 4. In the iSpy Edit box, the Recording option should be set to No Recording; this system uses external triggers. 
+ 5. In iSpy, Options->Settings->Storage, optionally change the media directory to one that you have automatically synced to a cloud storage service.  
+ 6.  In iSpy, Options->Settings->IP Access->IP addresses allowed, add the local IP address of the machine running the camera event listener launched below.  If you’re running the camera event listener on the same machine (recommended), put in “127.0.0.1.” 
+ 7. In iSpy, Options->Settings->Options, optionally check out other settings like “Restart If Crashed,” “Run on startup,” “Password Protect,” or Options->Settings->Connection Alerts, if you want those features. 
+ 8. Download and import (into Android Studio) the same project folder you did for the controller, if you’re running this camera listener on a different machine from the controller. 
+ 9. If you’re not running this camera listener on the same machine as iSpy (note you should still be at least on the same local network), change the IP address stored in `String serverAddress` early in CameraControllerZirk.java.
+ 10. In the function `callActionOnEachCameraInArea`, you may need to change the value of `oid` to match the iSpy object id you noted earlier.  See comments there about how to adjust for having standalone microphones or control multiple iSpy cameras, if applicable.
+ 11. Run CameraControllerZirk.main() (in the “listeners” subpackage). This will create a thread listening for recording instructions and adapting them for iSpy instructions.  Note: This prototype adapter is less robust than more fully developed Bezirk adapters typically are, but in at least some common cases works a lot better than having no camera adapter. 
