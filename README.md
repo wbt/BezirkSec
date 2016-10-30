@@ -1,5 +1,5 @@
 # Candid Camera
-As part of the Bezirk Hackathon Fall 2016, we created Candid Camera, a home security platform that uses the [Bezirk](http://bezirk.com/) Middleware.
+As part of the [Bezirk](http://bezirk.com/) Hackathon Fall 2016, we created Candid Camera, a home security platform that uses the [Bezirk](http://bezirk.com/) Middleware.
 
 ## What is it?
 Candid Camera monitors a door to catch unsoliciated strangers by sending you a video whenever an stranger opens it.  
