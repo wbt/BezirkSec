@@ -59,7 +59,10 @@ First, follow [these instructions](http://developer.bezirk.com/documentation/ins
 The smartphone software and installation instructions can be found [here](https://github.com/boyP/EstimoteAdapterBezirk).
  
 ### Controller:
- Detailed instructions coming soon.
+ 1. Download [this directory](https://github.com/wbt/BezirkSec/tree/master/CamSystemControllerBezirk) and import it as a project in Android Studio. 
+ 2. You may need to open Project View, expand the `libs` dir, right click on `mail.jar`, and choose `Add As Library` near the bottom of the list.
+ 3. The default setup is to record for 30 seconds after the door is closed, plus the entire time the door is open and any pre-trigger buffer, plus or minus communications delays, up to the maximum length configured for the camera under "Cameras" below.  In listeners/RecorderController.java you can optionally change that 30 second parameter `recLengthAfterDoorClose`.
+ 3. Run RecorderController.main().  This should listen for door events and send events to the recorders (i.e. cameras) as appropriate.
 
 ### Cameras:
  1. First, install [iSpy for Windows](http://www.ispyconnect.com/) on a Windows machine that will remain running while you wish the system to be active.  
