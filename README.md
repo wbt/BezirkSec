@@ -52,6 +52,6 @@ First, follow [these instructions](http://developer.bezirk.com/documentation/ins
  9. Run the main() method of this file.  This should create a thread that monitors the door switch and sends events when the switch state changes.  
  
 ### Smartphone:
-The smartphone software and installation instructions can be found [here](https://github.com/boyP/EstimoteAdapterBezirk).
-
+ 1. The smartphone software and installation instructions can be found [here](https://github.com/boyP/EstimoteAdapterBezirk); follow those.
+ 2. Install the Bluetooth beacon on or near the "inside" of the door.  You may want to use a temporary mounting at first to experiment with the exact placement later. 
 
