@@ -23,7 +23,7 @@ This technology could also be used to answer the age-old question, "[Who stole t
  - Improved hardware (e.g. real reed switch instead of button prototype) and conversion of Arduino + serial sensor piece to Wi-Fi-enabled Raspberry Pi to send Bezirk events directly and improve the form factor as well as reduce cost.  The Arduino + serial sensor hardware simulation used here already exceeds hackathon specs allowing software simulation of devices.
  - Camera client for Android that uses the camera on an Android device, and/or other adapters that can process camera events.  Again, writing the adapter allowing us to control real Windows camera devices exceeded hackathon specs.
  - Enhanced notifications including options for SMS, for including a direct link to the video (which may be stored on a cloud platform like Dropbox, Google Drive, etc. accessible to only authenticated users) and/or a still image attached to [MMS](https://en.wikipedia.org/wiki/Multimedia_Messaging_Service) or e-mail.
- - Simplified installation
+ - Simplified installation.
  
 ------------------------
 PLEASE NOTE:  This is a HACKATHON PROTOTYPE.  It is NOT yet well tested and has NO WARRANTY WHATSOEVER and you should NOT rely on it as-is.  If you try it, it’s at your own risk.
