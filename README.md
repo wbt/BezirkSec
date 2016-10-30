@@ -7,7 +7,7 @@ This technology could also be used to answer the age-old question, "[Who stole t
 
 ##Advantages:
  - This Internet of Things system is significantly lower cost than other comparables.  You only need:  
-   - An inexpensive wifi-enabled Arduino/Raspberry Pi, simple reed switch (possibly also a resistor), and magnet.
+   - An inexpensive Wi-Fi-enabled Arduino/Raspberry Pi, simple reed switch (possibly also a resistor), and magnet.
    - A low-power Bluetooth beacon ([Estimote](http://estimote.com/#get-beacons-section) is used in this prototype; can also change the code for another proximity sensor such as RFID).
    - An Android smartphone (cost estimates assume you already have this).
    - A camera device.  With current code, this could be a Windows computer with a webcam attached; a wide range of cameras and IP cameras are supported.  In a future edition, you can replace this with an old Android device like those you can buy inexpensively on eBay, that doesn’t even need a carrier plan.  
@@ -20,7 +20,7 @@ This technology could also be used to answer the age-old question, "[Who stole t
 ###Future improvements:
  - Better UI for configuring parameters and control.
  - Configurable authorization list (with revocation capabilities) listing specific phones that count as "recognized," instead of relying solely on Wi-Fi authentication controls,
- - Improved hardware (e.g. real reed switch instead of button prototype) and conversion of Arduino + serial sensor piece to wifi-enabled Raspberry Pi to send Bezirk events directly and improve the form factor as well as reduce cost.  The Arduino + serial sensor hardware simulation used here already exceeds hackathon specs allowing software simulation of devices.
+ - Improved hardware (e.g. real reed switch instead of button prototype) and conversion of Arduino + serial sensor piece to Wi-Fi-enabled Raspberry Pi to send Bezirk events directly and improve the form factor as well as reduce cost.  The Arduino + serial sensor hardware simulation used here already exceeds hackathon specs allowing software simulation of devices.
  - Camera client for Android that uses the camera on an Android device, and/or other adapters that can process camera events.  Again, writing the adapter allowing us to control real Windows camera devices exceeded hackathon specs.
  - Enhanced notifications including options for SMS, for including a direct link to the video (which may be stored on a cloud platform like Dropbox, Google Drive, etc. accessible to only authenticated users) and/or a still image attached to [MMS](https://en.wikipedia.org/wiki/Multimedia_Messaging_Service) or e-mail.
 
@@ -36,6 +36,7 @@ The system has four main software components:
  3.  Controller: Listens for door events and starts recording; cancels recording if authorized phone sends notice it was in the vicinity of the door; stops recording a certain amount of time after the door is closed (subject to a maximum recording length in case no “door closed” signal is received within a few minutes after the “door open” event); notifies owner.
  4.  Camera(s): Listens to recording instructions from controller.
 
+Since this is a distributed application, make sure all of the applications are connected to the same Wi-fi before running the application.  The message-passing middleware will also fail if the network enforces client isolation. 
 
 In a single-camera setup, it is suggested to run the controller on the same device as the camera.  In a multi-camera setup, the controller can be run on any camera.  It can also be run on the processor attached to the door sensor, if that processor has sufficient computing resources.  If the door sensor is driven by a full PC that also drives an IP camera elsewhere on the network, that same machine should also run the controller (and camera listener).  The controller should NOT be run on a mobile device that might be missing from the network at the time of a possible intrusion.  The software separation between controller and camera(s) permits use of multiple cameras, that may each have a different angle on the scene.  It is possible to eliminate the Bezirk interface between the controller and camera and have a separate controller for each camera, but this may lead to inconsistencies and extra notifications.
 
